@@ -1,0 +1,24 @@
+{
+  "name": "its_ur_wardrobe",
+  "version": "1.0.0",
+  "description": "eCommerce Application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server \" \"npm run client \""
+  },
+  "author": "Vinayak Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.0.3"
+  }
+}
